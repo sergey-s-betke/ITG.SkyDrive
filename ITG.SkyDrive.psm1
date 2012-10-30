@@ -8,6 +8,7 @@
 			'hkcu:\software\microsoft\skydrive' `
 		).GetValue('UserFolder')
 	) `
+	-Scope Global `
 | Out-Null `
 ;
 
