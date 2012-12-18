@@ -3,9 +3,9 @@
 	-Description 'Локальная копия диска MS SkyDrive' `
 	-PSProvider 'FileSystem' `
 	-Root (
-		(get-item `
+		(Get-Item `
 			-ErrorAction Stop `
-			'hkcu:\software\microsoft\skydrive' `
+			'HKCU:\Software\Microsoft\SkyDrive' `
 		).GetValue('UserFolder')
 	) `
 	-Scope Global `
